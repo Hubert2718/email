@@ -2,7 +2,6 @@ package com.hubert.controller;
 
 import com.hubert.EmailManager;
 import com.hubert.view.ViewFactory;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TreeView;
@@ -24,8 +23,8 @@ public class MainWindowController extends BaseController {
     }
 
     @FXML
-    void optionsAction(ActionEvent event) {
-
+    void optionsAction() {
+        super.viewFactory.showOptionsWindow();
     }
 
 }
